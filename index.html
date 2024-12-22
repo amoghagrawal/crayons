@@ -1,0 +1,77 @@
+<html><head><base href=".">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Crayons</title>
+  <link rel = "stylesheet" href="style.css">
+</head>
+<body>
+  <div class="landing-page" id="landing-page">
+      <div class="hero-section">
+          <div class="hero-content">
+              <h1 class="hero-title">Crayons</h1>
+              <p class="hero-description">
+                  Create stunning color palettes for your next project. 
+                  Generate, customize, and save your perfect color combinations 
+                  with Crayons.
+              </p>
+              <button class="start-btn" id="start-app">Generate Now</button>
+          </div>
+          <div class="hero-image">
+              <img src="cover.png" alt="Color Palettes" style="width: 100%; height: 100%; object-fit: cover;">
+          </div>
+      </div>
+  </div>
+  <div class="app-container" id="app-container">
+      <div class="controls">
+          <div class="header-top">
+              <a href="#" id="logo-link">
+                  <img src="icons/logo.svg" alt="Crayons Logo" class="header-logo">
+              </a>
+          </div>
+          <div class="header-bottom">
+              <div class="spacebar-hint">Press the spacebar to generate colour palettes!</div>
+              <div class="buttons-group">
+                  <button id="save-btn" class="header-button">
+                      <img src="icons/Save.svg" alt="Save">
+                      Save
+                  </button>
+                  <button id="download-btn" class="header-button">
+                      <img src="icons/Download.svg" alt="Download">
+                      Download
+                  </button>
+                  <button id="mood-btn" class="header-button">
+                      <img src="icons/Mood.svg" alt="Mood">
+                      Analyze Mood
+                  </button>
+                  <button id="sidebar-toggle" class="header-button">
+                      <img src="icons/Chevrons left.svg" alt="Toggle Sidebar">
+                  </button>
+              </div>
+          </div>
+      </div>
+      <div class="palette-container" id="palette-container">
+      </div>
+  </div>
+
+  <div class="sidebar" id="sidebar">
+      <div class="sidebar-header">
+          <h2>Saved Palettes</h2>
+          <button class="close-sidebar" id="close-sidebar">&#xd7;</button>
+      </div>
+      <div id="saved-palettes-container"></div>
+  </div>
+
+  <div class="toast" id="toast">Copied to clipboard!</div>
+  <div class="toast" id="save-toast">Palette saved successfully!</div>
+  <div class="popup-overlay" id="popup-overlay"></div>
+  <div class="mood-popup" id="mood-popup">
+      <button class="close-popup" id="close-popup" style="width: 40px; height: 40px;">
+          <img src="icons/Cross.svg" alt="Close" style="width: 100%; height: 100%;">
+      </button>
+      <div class="mood-emoji" id="mood-emoji"></div>
+      <h2 id="mood-title"></h2>
+  </div>
+</body>
+<script src="script.js"></script>
+</body>
+</html>
